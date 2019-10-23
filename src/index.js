@@ -4,16 +4,46 @@ import './index.css';
 import ShowTime from './ShowTime';
 import Todolist from './Todolist/Todolist'
 import Request from './Request'
+import Parent from './Context/Parent'
+import {con} from './Context/Context'
+import Hoc from './Hoc/Hoc';
+import ParentPortal from './Portal/ParentPortal';
+import App from './App';
+import Cnode from './Cnode/Cnode';
+import Sider from './Sider';
 
+ReactDOM.render(<Cnode/>,document.getElementById('root'));
 
+//todolist
+// ReactDOM.render(<Todolist/>,document.getElementById('root'));
 
+// App
+// ReactDOM.render(<App/>,document.getElementById('root'));
+
+//Portals
+// ReactDOM.render(<ParentPortal/>,document.getElementById('root'));
+
+//HOC
+// ReactDOM.render(<Hoc/>,document.getElementById('root'));
+
+//Context
+// let color = 'red';
+// ReactDOM.render(
+//     // <Provider value={color}>
+//     //     <Parent/>
+//     // </Provider>
+//     <con.Provider value={color}>
+//         <Parent/>
+//     </con.Provider>
+//     ,document.getElementById('root')
+// );
 
 //组件交互
 //父组件 --> 子组件：调用时在子组件上添加属性
 //在子组件中通过props获取数据
-ReactDOM.render(
-    <Request/>,document.getElementById('root')
-);
+// ReactDOM.render(
+//     <Request/>,document.getElementById('root')
+// );
 
 //ShowTime.js
 // ReactDOM.render(
